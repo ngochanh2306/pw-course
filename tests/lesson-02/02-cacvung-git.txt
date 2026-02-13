@@ -1,0 +1,28 @@
+Bai 2:
+a)
+- Local: file1, file2, file3
+
+b)
+- Working directory: file1, file2. file3
+- Staging: 
+- Repository: 
+
+c)
+- Working directory: file1, file2, file3
+- Staging: 
+- Repository: 
+
+d)
+- Working directory: file2, file3
+- Staging: file1
+- Repository: 
+
+e)
+- Working directory: file2, file3
+- Staging: 
+- Repository: file1
+
+f)
+- Working directory: file2, file3
+- Staging: 
+- Repository: file1
