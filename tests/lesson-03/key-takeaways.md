@@ -3,7 +3,7 @@ Undo Git:
     - Chuyển từ Repository -> working directory: git reset HEAD~<số commit muốn back>
 
 Git amend:
-    - Sửa message commit: git commit --amend
+    - Sửa message commit: git commit --amend (:wq để lưu, :q! để không lưu)
     - Commit thiếu file: git add file_thieu
                  git commit --amend
 *** Note: không được amend khi đã push remote

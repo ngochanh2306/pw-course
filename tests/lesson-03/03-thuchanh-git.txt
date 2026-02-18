@@ -1,0 +1,31 @@
+Nghĩa là tất cả các file .gitignore, file1, file2, oops nằm tron demo đúng hong ạ
+a) Chạy lệnh git init:
+- Working directory: 
+- Stagging: 
+- Respository:
+
+b) Tạo file file1.txt, file2.txt, oops/file3.txt:
+- Working directory: file1.txt, file2.txt, oops/file3.txt
+- Stagging: 
+- Respository:
+
+c) Thêm file .gitignore:
+    i) Thêm file1.txt:
+- Working directory: file2.txt, oops/file3.txt
+- Stagging: 
+- Respository:
+
+    ii) Thêm oops/:
+- Working directory: file2.txt
+- Stagging: 
+- Respository:
+
+d) Chạy lệnh git add .:
+- Working directory:
+- Stagging: file2.txt
+- Respository:
+
+e) Chạy lệnh git commit -m "init project":
+- Working directory: 
+- Stagging: 
+- Respository: file2.txt
