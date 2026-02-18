@@ -1,0 +1,64 @@
+Undo Git:
+    - Chuyển từ staging -> working directory: git restore --staged <file name>
+    - Chuyển từ Repository -> working directory: git reset HEAD~<số commit muốn back>
+
+Git amend:
+    - Sửa message commit: git commit --amend
+    - Commit thiếu file: git add file_thieu
+                 git commit --amend
+*** Note: không được amend khi đã push remote
+
+Nhánh:
+    - Khi chạy khởi tạo repo (git init), nhánh mặc định được tạo ra
+    - Khi khời tạo đặt nhanh mặc định là nhánh main:
+    Git config --global init.defaultBranch main
+    - Tạo nhánh mới nó sẽ copy toàn bộ nhanh hiện tại: file, commit, v.v…
+    Git branch <tên nhanh mới>
+    - Xem các nhánh hiện có: git branch
+    - Di chuyển sang nhánh khác: git checkout <tên nhánh>
+    - Tạo và di chuyển sang nhánh mới: git checkout -b <tên nhánh mới>
+    - Đứng trên nhánh khác và xóa: git branch -D <tên nhánh>
+    NOTE: luôn pull code trước khi tạo nhánh mới 
+    - File .gitignore: file cấu hình chỉ định những file và thư mục không cần thiết nào sẽ không được Git theo dõi:
+    + File tạm thời của hệ điều hành
+    + Thư mục dependencies (node_modules, vendor)
+    + File build và artifacts (dist, build, *.exe)
++ File cấu hình cá nhân (IDE setting, environment variables)
+    + File nhạy cảm (API keys, password, certificates)
++ File log và database local
+    
+Convention:
+    - snake_case: 
+    - kebab-case: tên file, tên folder
+    - camelCase: tên biến, tên hàm
+    - PascalCase: tên class
+    
+Object:
+    - Khai báo
+    Const/let myInfor = {
+        "name": "Hanh",
+        'phoneNumber': "0123456789",
+        address: "VL",
+        Class: {
+            Name: "Lop Piano",
+            Level: "beginner"
+        }
+    }
+    
+    --> key có thể không cần " ' nếu chỉ có 1 từ
+    --> value có thể là string, number, boolean hoặc 1 object khác
+    
+    - Truy xuất 1 giá trị: 
+    + Khi tên key không có dấu cách, symbol: console.log(myInfor.class.name);
+    + Khi tên key có dấu cách, symbol: console.log(myInfor["class"]["name]);
+
+Array:
+    - Khai báo: const arr = [1, 2, 3];
+    - In: console.log(arr[0]);
+    - Độ dài: console.log(arr.length);
+
+Function:
+Function tinhDienTich (dai, rong){
+    Const dienTich = dai*rong;
+    Console.log(`Dien tich: ${dienTich}`);
+}
