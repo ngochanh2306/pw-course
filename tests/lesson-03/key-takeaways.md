@@ -39,9 +39,9 @@ Object:
         "name": "Hanh",
         'phoneNumber': "0123456789",
         address: "VL",
-        Class: {
-            Name: "Lop Piano",
-            Level: "beginner"
+        class: {
+            name: "Lop Piano",
+            level: "beginner"
         }
     }
     
@@ -51,6 +51,35 @@ Object:
     - Truy xuất 1 giá trị: 
     + Khi tên key không có dấu cách, symbol: console.log(myInfor.class.name);
     + Khi tên key có dấu cách, symbol: console.log(myInfor["class"]["name]);
+
+    - Thay đổi const object:
+    + Thay đổi bằng 1 object mới sẽ lỗi
+        ví dụ: 
+        const student = {
+            name: "hanh", 
+            age: 20
+        }
+
+        -> const student = {
+            name: "ivy", 
+            age: 24
+        } //lỗi
+
+    + Thay đổi giá trị từng thuộc tính thi không lỗi
+        -> student.name = "ivy";
+           student.age = 24;
+
+    - Thêm thuộc tính vào object: Dùng dấu "." hoặc []
+        ví dụ: 
+        let dog = {
+            name: "Black", 
+            age: 2
+        }
+        -> dog.color = "grey";
+        -> dog.["mother dog"] = "White";
+
+    - Xóa thuộc tính object: Dùng hàm delete:
+        ví dụ: delete dog.age;
 
 Array:
     - Khai báo: const arr = [1, 2, 3];
